@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>   
+        <script src="https://npmcdn.com/moralis@latest/dist/moralis.js"></script>
+        <title> Request Detail Page</title>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity=
+            "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="../css/header.css" type="text/css">
+            <link rel="stylesheet" href="../css/index.css" type="text/css">
+        
+    </head>
+    <body>
+        <ul> 
+            
+            <li><a href="/">Home</a></li>
+            <li><a href="/ReqList">List Of Requests</a></li>
+        </ul>
+        <div class="container-table100">
+        <div class="wrap-table100">
+        <table class="table100">
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+        <% if(detail.usrname != ""){ %>
+            <tr>
+                <td>Full Name</td>
+                <td><%= detail.usrname %></td>
+            </tr>
+            <% } %>
+        <% if(detail.usrdocNum != ""){ %>
+            <tr>
+                <td>Document Number</td>
+                <td><%= detail.usrdocNum %></td>
+            </tr>
+        
+            <% } %>
+        <% if(detail.usrIPFShash != ""){ %>
+            <tr>
+                <td>Document Image</td>
+                <td><a href=' <%= detail.usrIPFShash %>' target="blank" > Image</a></td>
+            </tr>
+    
+            <% } %>
+        </table>
+        </div>
+        </div>
+    </body>
+</html>

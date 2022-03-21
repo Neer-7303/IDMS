@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>   
+        <script src="https://npmcdn.com/moralis@latest/dist/moralis.js"></script>
+        <title> Add Request Page</title>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity=
+            "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="../css/header.css" type="text/css">
+            <link rel="stylesheet" href="../css/home.css" type="text/css">
+
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+            <script src="../js/tmp.js"></script>
+        
+    </head>
+    <body>
+      <ul> 
+            
+        <li><a href="/">Home</a></li>
+        <li><a href="/ReqList">List Of Requests</a></li>
+    </ul>
+
+    <div class="container-table100">
+      <div class="wrap-table100">
+        <div class="table100">
+      <table>
+        <thead>
+        <tr class="table100-head">
+          <th class="column1 c">Institution Name</th>
+          <th class="column2 c">St. Francis Bank</th>
+        </tr>
+        </thead>
+        <thead>
+        <tr class="table100-head">
+          <th class="column1 c">Institution Address</th>
+          <th class="column2 c">0x41D56AD51365d04ae58BDB8E1E6dB072fd28d089</th>
+        </tr>
+      </thead>
+      <thead>
+        <tr class="table100-head">
+          <th class="column1 c">Attribute</th>
+          <th class="column2 c">Required</th>
+        </tr>
+        </thead>
+        <tr>
+          <td colspan="2" class="c" ><input type="text" size="50" maxlength="43" id="usrAddr" class="inputUA" placeholder="User Ethereum Address"></td>
+        </tr>
+        <tr>
+          <td class="column1 r"> Doc. Number </td> 
+          <td class="column2 c"><input type="checkbox" id="docNumFlag" name = "numflg"> </td>
+        </tr>
+        <tr>
+          <td class="column1 r"> Name of the Holder </td> 
+          <td class="column2 c"><input type="checkbox" id="docNameFlag" name = "numflg"> </td>
+        </tr>
+        <tr>
+          <td class="column1 r"> Image of the document </td> 
+          <td class="column2 c"><input type="checkbox" id="docHashFlag" name = "numflg"> </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="c"><button class="button button1 " onclick="sendReq()">Add Request</button></td>
+        </tr>
+      </table>
+        </div>
+      </div>
+    </div>
+      
+
+
+
+
+       
+        
+    </body>
+</html>

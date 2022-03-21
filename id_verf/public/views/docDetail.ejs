@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>   
+        <script src="https://npmcdn.com/moralis@latest/dist/moralis.js"></script>
+        <title> List of req</title>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity=
+            "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../css/header.css" type="text/css">
+            <link rel="stylesheet" href="../css/index.css" type="text/css">
+            
+        
+    </head>
+    <body>
+      <ul> 
+            
+        <li><a href="/">Home</a></li>
+
+        
+    </ul>
+        <input type="hidden" value="<%= contractAddr %>" id="contractAddr">
+        <input type="hidden" value="<%= authorityAddr %>" id="authorityAddress">
+        <input type="hidden" value="<%= userAdd %>" id="userAddress">
+        <input type ="hidden" value = "<%= ind %>" id="ind">
+
+        <div class="container-table100">
+            <div class="wrap-table100">
+              <div class="table100">
+                <table id="requestTable">
+                  <thead>
+                    <tr class="table100-head">
+                      <th class="column1">UserAddress</th>
+                      <th class="column2" colspan="2"><%= userAdd %></th>
+                      
+                    </tr>
+                      
+                    <tr class="table100-head">
+                      <th class="column1">Sr.no</th>
+                      <th class="column2">Attribute</th>
+                      <th class = "column3">Field Value</th>
+                    </tr> 
+                  </thead>
+  
+                 </table>
+                </div>
+              </div>
+            </div>
+
+        <script src="../js/verifDet.js"></script>
+    </body>
+</html>
